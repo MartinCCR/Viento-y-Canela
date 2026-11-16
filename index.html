@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viento y Canela - Repostería Artesanal en Manizales</title>
+  
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-title">Viento & Canela</span>
+        <span class="logo-sub">Repostería Artesanal · Manizales</span>
+      </a>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Esencia</a></li>
+        <li><a href="#catalogo">Nuestras Tortas</a></li>
+        <li><a href="#personalizados">Diseño Personalizado</a></li>
+        <li><a href="#contacto" class="btn-nav-ws">Pedir por WhatsApp</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header id="inicio" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">100% Artesanal y Natural</span>
+      <h1>Tortas húmedas, esponjosas y llenas de amor casero</h1>
+      <p>Elaboradas con fruta real, sin aditivos ni conservantes químicos. El verdadero sabor artesanal horneado en Manizales.</p>
+      <div class="hero-buttons">
+        <a href="#catalogo" class="btn-primary">Ver Catálogo de Sabores</a>
+        <a href="#personalizados" class="btn-secondary">Diseña tu Torta</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nuestra Esencia -->
+  <section id="nosotros" class="about-section">
+    <div class="container grid-2">
+      <div class="about-text">
+        <span class="section-subtitle">NUESTRA ESENCIA</span>
+        <h2>En Viento y Canela creemos que lo natural sabe mejor</h2>
+        <p>Preparamos cada torta de forma totalmente artesanal, utilizando fruta real y seleccionada, manteniendo una receta húmeda y esponjosa que cuida tu salud y deleita tu paladar.</p>
+        <p>Directo desde nuestra cocina en Manizales para compartir y celebrar en familia.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num">🍎</span>
+          <h4>Fruta Real</h4>
+          <p>Sabor natural garantizado</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">✨</span>
+          <h4>0% Químicos</h4>
+          <p>Sin aditivos ni conservantes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Tortas -->
+  <section id="catalogo" class="catalog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">NUESTRO MENÚ DE SABORES</span>
+        <h2>Elige tu sabor y tamaño favorito</h2>
+        <p>Haz clic en las flechas de las tarjetas para ver diferentes decoraciones de pedidos reales que hemos elaborado.</p>
+      </div>
+
+      <!-- Filtros de búsqueda -->
+      <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por sabor (ej. Manzana, Red Velvet, Piña)...">
+        <div class="category-buttons" id="categoryButtons">
+          <button class="cat-btn active" data-cat="todas">Todas</button>
+          <button class="cat-btn" data-cat="Frutales">Frutales</button>
+          <button class="cat-btn" data-cat="Especiales">Especiales</button>
+          <button class="cat-btn" data-cat="Tradicionales">Tradicionales</button>
+        </div>
+      </div>
+
+      <!-- Contenedor dinámico de tarjetas -->
+      <div class="product-grid" id="productContainer">
+        <!-- Generado mediante JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NUEVA SECCIÓN: Diseños Personalizados -->
+  <section id="personalizados" class="custom-cake-section">
+    <div class="container">
+      <div class="custom-card">
+        <div class="custom-content">
+          <span class="badge-custom">¡TÚ LO IMAGINAS, NOSOTROS LO HORNEAMOS!</span>
+          <h2>¿Tienes un diseño o temática en mente?</h2>
+          <p>¡Hacemos el diseño que se te dé la gana! Si viste una foto en Pinterest, Instagram o tienes una idea propia para un cumpleaños, aniversario o evento especial, envíanos la foto o cuéntanos tu idea. La decoramos a tu gusto y con la combinación de sabores que elijas.</p>
+          <a href="https://wa.me/570000000000?text=Hola!%20Tengo%20una%20idea%20un%20dise%C3%B1o%20personalizado%20para%20una%20torta,%20%C2%BFme%20pueden%20cotizar?" target="_blank" class="btn-custom-ws">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Cotizar mi diseño personalizado por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Pie de Página -->
+  <footer id="contacto" class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Viento & Canela</h3>
+        <p>Repostería Artesanal & Natural · Manizales, Caldas</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto Directo</h4>
+        <p>📍 Entregas en Manizales</p>
+        <p>📱 WhatsApp: <a href="https://wa.me/570000000000" target="_blank">+570000000000</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Viento y Canela. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/570000000000?text=Hola!%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20tortas" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
